@@ -1,0 +1,116 @@
+*{
+	margin:auto;
+	padding:auto;
+}
+
+html, body{
+	width:100%;
+	height:100%;
+	font-size:15px;
+	font-weight:normal;
+}
+
+.background{
+	
+	width:100%;
+	height:100%;
+	background-image: url(bg1blurrrr.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:fixed;
+	overflow-y:auto;
+	color:white;
+	text-align:center;
+}
+
+
+.profile{
+	width:450px;
+	height:100%;
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+	margin:auto;
+	letter-spacing:3px;
+	color:#CCC;
+	display: block;
+	font-family:'Century Gothic',sans-serif;
+	
+}
+
+img{
+	height:250px;
+	border-radius:80%;
+}
+
+li {
+	list-style:none;
+}
+
+ul li a{
+	padding-right:30px;
+	color:#CCC;
+	text-decoration:none;
+	font-size:15px;
+
+	}
+
+li a:hover{
+	color:#063;
+}
+
+.mob,.hamburger-btn{
+
+	display:none;
+	
+}
+
+
+
+
+
+@media screen and (max-width:700px){
+.profile{
+		display:none;
+	}
+	.mob,.hamburger-btn{
+	display:block;
+	
+}
+
+.hamburger-btn{
+	position: relative;
+}
+.hamburger-btn .fa-bars,.hamburger-btn .fa-times{
+	position: fixed;
+	right:25px;
+	top:15px;
+	font-size: 35px;
+	cursor: pointer;
+
+}
+
+.mob ul{
+	
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+	padding: 20px;
+	cursor: pointer;
+	display: none;
+
+}
+
+.mob ul.active{
+	display: block;
+
+}
+
+.mob li{
+	
+	font-size: 35px;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+
+}
+
+}
